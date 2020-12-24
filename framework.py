@@ -1,4 +1,8 @@
 from sys import argv
+import time
+
+t0 = time.time()
+print(t0)
 
 script, part, input_file = argv
 
@@ -16,3 +20,6 @@ if __name__ == "__main__":
         p1()
     if part == 'p2':
         p2()
+
+t1 = time.time()
+print(t1-t0)
